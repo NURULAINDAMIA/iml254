@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Friends</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <style>
+    .slideshow-container {
+      max-width: 600px;
+      position: relative;
+      margin: auto;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    .mySlides img {
+      width: 100%;
+      height: auto;
+      border-radius: 900% / 100%;
+      border: 15px solid rgb(253, 253, 253);
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(31, 0, 0, 0.8);
+    }
+
+    .footer-button {
+      display: inline-block;
+      margin: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: white;
+      background-color: #1a0000;
+      border-radius: 4px;
+      border-radius: 40% / 100%;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-button:hover {
+      background-color: #802236;
+    }
+
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      background-color: #ff99ff;
+    }
+  </style>
+</head>
+<body bgcolor="#ff99ff">
+    <header class="header-file4">
+        <h1>My Friends</h1>
+    </header>
+    <br></br>
+    <div class="title">
+        <h2>Close Friends🌹</h2>
+        <br></br>
+    </div>
+    <section class="image">
+        <img src="image/bf.jpg" class="friends-picture">
+    </section>
+    <div class="content-01">
+        <h3>A good buddy is a vital asset in someone's life. They are the ones who are always there for us, whether we are happy or sad. 
+            They are more than simply friends with whom we share our joys and sorrows; they are also devoted listeners who comprehend our feelings 
+            and emotions without requiring extensive explanations.
+        </h3>
+        <h3>I am extremely blessed to have a dear friend named Ainul who has been with me since infancy. We met in primary school, 
+            but we weren't particularly close at first due to our separate classes. However, fate placed us together in the same class in secondary school, 
+            and our friendship blossomed from there. Even when we were sent to different courses in Form 4, we never drifted apart.
+        </h3>
+        <h3>Ainul is someone with whom I share joyful moments and wonderful memories. We frequently spend time together during semester holidays, going to cafes, 
+            the beach, or simply sitting in the park conversing. Every moment with Ainul is full of joy and laughter. She can make me grin even in bad moments.
+        </h3>
+        <h3>A friend like Ainul is a valuable asset in life. She offers great support, drive, and delight. I am grateful to have such an understanding friend who is always there for me. 
+            Our companionship not only enriches my daily life, but also teaches me about loyalty, sincerity, and genuine love. I hope our friendship will last until the end of our lives.
+        </h3>
+    <br></br>
+    </div>
+    </div>
+    <br></br>
+    <div class="title">
+        <h2>Comrade👩‍💻🌸</h2>
+    </div>
+    <br></br>
+    <div class="slideshow-container">
+  
+        <div class="mySlides">
+          <img src="image/1.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/2.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/3.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/4.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/5.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/7.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/8.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/9.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/10.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/11.jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides">
+          <img src="image/12.jpg" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+      
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+      
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+      
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+      </script>
+      <br></br>
+      <div class="video-container">
+        <video width="560" height="340" controls class="video">
+          <source src="video/video1.mp4" type="video/mp4">
+        </video>
+        <br></br>
+        <video width="560" height="340" controls class="video">
+          <source src="video/video2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <br></br>
+
+      <footer>
+        <a href="index.html" class="footer-button">HOME</a>
+      </footer>
+
+        
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambition</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 90vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: hidden;
+            margin-top: 900px;
+        }
+        .imgContainer {
+            width: 100%;
+            height: 600px;
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 1s;
+        }
+        .slide_div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5px;
+        }
+        .img {
+            position: relative;
+            width: 250px; /* Tetapkan lebar tetap */
+            height: 300px; /* Tetapkan tinggi tetap */
+            filter: saturate(10%);
+            transition: 0.7s;
+            object-fit: cover; /* Pastikan gambar memenuhi ruang dengan nisbah aspek */
+            background-color: rgba(0,0,0,0.7);
+            border-radius: 20px;
+        }
+
+        .button{
+            position: absolute;
+            width: 250px;
+            height: 300px;
+            transition: 0.7s;
+            border-radius: 20px;
+            background-color: rgba(0,0,0,0.7);  
+            z-index: 1;
+        }
+
+        .button:hover{
+            background-color: rgba(0,0,0,0.0);
+        }
+
+        #slider1:target ~ .imgContainer #img1,
+        #slider1:target ~ .imgContainer #button1{
+            width: 300px;
+            height: 350px;
+            background-color: transparent;
+            filter: saturate(100%);
+        }
+
+        #slider2:target ~ .imgContainer #img2,
+        #slider2:target ~ .imgContainer #button2{
+            width: 300px;
+            height: 350px;
+            background-color: transparent;
+            filter: saturate(100%);
+        }
+
+        #slider3:target ~ .imgContainer #img3,
+        #slider3:target ~ .imgContainer #button3{
+            width: 300px;
+            height: 350px;
+            background-color: transparent;
+            filter: saturate(100%);
+        }
+
+        #slider4:target ~ .imgContainer #img4,
+        #slider4:target ~ .imgContainer #button4{
+            width: 300px;
+            height: 350px;
+            background-color: transparent;
+            filter: saturate(100%);
+        }
+
+        #slider5:target ~ .imgContainer #img5,
+        #slider5:target ~ .imgContainer #button5{
+            width: 300px;
+            height: 350px;
+            background-color: transparent;
+            filter: saturate(100%);
+        }
+
+        #slider1:target ~ .imgContainer{
+            left: 40%;
+        }
+
+        #slider2:target ~ .imgContainer{
+            left: 20%;
+        }
+
+        #slider3:target ~ .imgContainer{
+            left: 0%;
+        }
+
+        #slider4:target ~ .imgContainer{
+            left: -20%;
+        }
+
+        #slider5:target ~ .imgContainer{
+            left: -40%;
+        }
+
+        .ambition {
+            margin-top: -100px;
+            margin-left: -1150px;
+            border-radius: 40% / 40%;
+            border: 15px solid rgb(7, 7, 7);
+        }
+
+        .header-file7 {
+            text-align: center;
+            justify-items: center;
+            text-decoration-style: inherit;
+            color: rgb(10, 10, 10);
+            background-color: #f1a6a6;
+            margin-top: -550px;
+            margin-left: -100px;
+            margin-right: -200px;
+            top: 0;
+            left: 0;
+            width: 120%;
+            padding: 10px 40%;
+            white-space: nowrap;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+
+        .image h3 {
+            text-align: justify;
+            margin-left: -750px;
+            margin-top: -290px;
+            font-size: larger;
+            width: 600px;
+            height: 100px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .footer-button {
+            display: inline-block;
+            margin-right: 200px;
+            margin-left: -680px;
+            margin-top: 800px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #00001a;
+            border-radius: 4px;
+            border-radius: 40% / 100%;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            /* Tambah bayangan */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-button:hover {
+            background-color: #ebfc01;
+            margin-right: 200px;
+            margin-left: -680px;
+            margin-top: 800px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            background-color: #f07878;
+            margin-right: 200px;
+            margin-left: -680px;
+            margin-top: 820px;
+        }
+    </style>
+</head>
+<body style="width: 100%; height: 100vh; display: flex; align-items: center; overflow: hidden; overflow-y: auto; background:#f07878; margin: 0;">
+    <header class="header-file7">
+        <h1>Architect: Shaping the World 📏🌏</h1>
+    </header>
+    
+    <section class="image">
+        <img src="image/acr.png" width="290" height="330" class="ambition">
+        <h3>I aspire to be an architect because I admire architecture that mixes beauty and functionality. Despite not getting admission to the architecture programme through UPU 
+            and earning a diploma in another field, my interest in architecture remained strong. I'm fascinated by how architecture influences living and how technology and sustainability 
+            may be integrated into building design. Hopefully, I will have the opportunity to continue learning and eventually become a professional architect, contributing to society and the world of architecture.</h3>
+    </section>
+
+    <div class="container">
+        <span class="slider" id="slider1"></span>
+        <span class="slider" id="slider2"></span>
+        <span class="slider" id="slider3"></span>
+        <span class="slider" id="slider4"></span>
+        <span class="slider" id="slider5"></span>
+
+        <div class="imgContainer">
+            <div class="slide_div" id="slide_1">
+                <img src="image/arc1.jpg" alt="" class="img" id="img1">
+                <a href="#slider1" class="button" id="button1"></a>
+            </div>
+            <div class="slide_div" id="slide_2">
+                <img src="image/arc2.jpg" alt="" class="img" id="img2">
+                <a href="#slider2" class="button" id="button2"></a>
+            </div>
+            <div class="slide_div" id="slide_3">
+                <img src="image/arc3.jpg" alt="" class="img" id="img3">
+                <a href="#slider3" class="button" id="button3"></a>
+            </div>
+            <div class="slide_div" id="slide_4">
+                <img src="image/arc4.jpg" alt="" class="img" id="img4">
+                <a href="#slider4" class="button" id="button4"></a>
+            </div>
+            <div class="slide_div" id="slide_5">
+                <img src="image/arc5.jpg" alt="" class="img" id="img5">
+                <a href="#slider5" class="button" id="button5"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="index.html" class="footer-button">HOME</a>
+    </footer>
+
+
+</body>
+</html>
